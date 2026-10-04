@@ -1,0 +1,10 @@
+@import "tailwindcss";
+body{background:radial-gradient(900px 500px at 0 0,#fbcfe8aa,transparent),radial-gradient(900px 600px at 100% 100%,#ddd6feaa,transparent),#fdf4ff;color:#1b1f4b;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+.glass{background:rgba(255,255,255,.62);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.85);box-shadow:0 12px 32px -14px rgba(124,58,237,.3)}
+.grad{background:linear-gradient(135deg,#ec4899,#8b5cf6)}
+.navy{background:linear-gradient(160deg,#0f1535,#1b1f4b 70%,#2d2a6e)}
+input,select{outline:none}input:focus,select:focus{box-shadow:0 0 0 2px #c4b5fd}
+@keyframes dash{from{stroke-dasharray:0 252}}.gauge-arc{animation:dash 1.1s ease-out}
+@keyframes beat{to{stroke-dashoffset:-220}}.beat{stroke-dasharray:120 100;animation:beat 2.4s linear infinite}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}}main>*{animation:rise .4s ease}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
